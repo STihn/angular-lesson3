@@ -1,0 +1,6 @@
+<p>{{ param | uppercase }}</p>
+
+<input type="text" [(ngModel)]="searchStr"/>
+
+<p *ngFor="let name of names | search:searchStr">{{searchStr}}</p>
+
